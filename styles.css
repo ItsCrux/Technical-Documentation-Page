@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    min-width: 300px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #2C394B;
+    color: #fff;
+}
+
+/* table stuff */
+table,
+td {
+    text-align: left;
+    border: 1px solid #FF4C29;
+
+}
+
+
+/* navbar */
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid silver;
+    height: 100%;
+    min-width: 230px;
+    width: 250px;
+    background-color: #082032;
+}
+
+#nav-bar ul {
+    list-style: none;
+    height: 90%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#nav-bar li {
+    color: silver;
+    border-top: 1px solid;
+    position: relative;
+    width: 100%;
+}
+
+#nav-bar a {
+    display: block;
+    padding: 5px 15px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#nav-bar a:hover {
+    color: #FF4C29;
+}
+
+
+
+.nav-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: thin;
+}
+
+
+/*main doc + sections */
+#main-doc {
+    margin-left: 19%;
+    position: absolute;
+    padding: 15px;
+    margin-bottom: 100px;
+}
+
+#main-doc>h1 {
+    text-align: left;
+    margin: 0px;
+}
+
+#main-doc a {
+    color: silver;
+}
+
+#main-doc a:hover {
+    color: #FF4C29;
+}
+
+
+/* code area */
+.code-area {
+    display: block;
+    text-align: left;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    background-color: #334756;
+    border: 0.5px solid #FF4C29;
+    font-size: 1rem;
+}
+
+.resp-img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* media queries for phone and lower res screens */
+
+
+@media only screen and (max-width: 1300px) {
+    #main-doc {
+        margin-left: 22%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    #main-doc {
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #main-doc {
+        margin-left: 27%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #navbar ul {
+        border: 1px solid;
+        height: 200px;
+    }
+
+    #nav-bar {
+        position: absolute;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 1000;
+        width: 100%;
+        max-height: 250px;
+        border: none;
+        border-bottom: 1px solid;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 250px;
+    }
+}

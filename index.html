@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <header>
+            <h3 class="nav-title">HTML Documentation</h3>
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction to HTML</a></li>
+            <li><a class="nav-link" href="#GettingStarted">Getting Started with HTML</a></li>
+            <li><a class="nav-link" href="#HTMLAttrib">HTML Attributes</a></li>
+            <li><a class="nav-link" href="#HTMLHeadings">HTML Headings</a></li>
+            <li><a class="nav-link" href="#HTMLParagraphs">HTML Paragraphs</a></li>
+        </ul>
+    </nav>
+
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>
+                <h1>Introduction to HTML</h1>
+            </header>
+            <p>At its heart, <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">HTML</a> is a fairly
+                simple language made up of <a
+                    href="https://developer.mozilla.org/en-US/docs/Glossary/Element">elements</a>, which can be applied
+                to pieces of
+                text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part
+                of a table?), structure a document into logical sections (Does it have a header? Three columns of
+                content? A navigation menu?), and embed content such as images and videos into a page. This module will
+                introduce the first two of these and introduce fundamental concepts and syntax you need to know to
+                understand HTML.</p>
+            <h1>Guides</h1>
+            <p>This module contains the following articles, which will take you through all the basic theory of HTML and
+                provide ample opportunity for you to test out some skills.</p>
+            <h4><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Getting
+                    started with HTML</a></h4>
+            <p>Covers the absolute basics of HTML, to get you started — we define elements, attributes, and other
+                important terms, and show where they fit in the language. We also show how a typical HTML page is
+                structured and how an HTML element is structured, and explain other important basic language features.
+                Along the way, we'll play with some HTML to get you interested!</p>
+            <h4><a
+                    href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML">
+                    What’s in the head? Metadata in HTML</a></h4>
+            <p>The head of an HTML document is the part that is not displayed in the web browser when the page is
+                loaded. It contains information such as the page title, links to CSS (if you want to style your HTML
+                content with CSS), links to custom favicons, and metadata (data about the HTML, such as who wrote
+                it, and important keywords that describe the document).</p>
+            <h4><a
+                    href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals">
+                    HTML text fundamnetals</a></h4>
+            <p>One of HTML's main jobs is to give text meaning (also known as semantics), so that the browser knows how
+                to display it correctly. This article looks at how to use HTML to break up a block of text into a
+                structure of headings and paragraphs, add emphasis/importance to words, create lists, and more.</p>
+        </section>
+
+
+        <section id="GettingStarted" class="main-section">
+            <header>
+                <h1>Getting started with HTML</h1>
+            </header>
+            <p>In this article we cover the absolute basics of HTML. To get you started, this article defines elements,
+                attributes, and all the other important terms you may have heard. It also explains where these fit into
+                HTML. You will learn how HTML elements are structured, how a typical HTML page is structured, and other
+                important basic language features. Along the way, there will be an opportunity to play with HTML too!
+            </p>
+            <table>
+                <tr>
+                    <td>
+                        <h4>Prerequisites:</h4>
+                    </td>
+                    <td>Basic computer literacy, basic software installed, and basic knowledge of working with files.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Objective:</h4>
+                    </td>
+                    <td>To gain basic familiarity with HTML, and practice writing a few HTML elements.
+                    </td>
+                </tr>
+            </table>
+
+            <h1>What is HTML?</h1>
+            <p>HTML (Hypertext Markup Language) is not a programming language. It is a markup language that tells web
+                browsers how to structure the web pages you visit. It can be as complicated or as simple as the web
+                developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark
+                up different parts of content to make it appear or act in a certain way. The enclosing tags can make
+                content into a hyperlink to connect to another page, italicize words, and so on. For example, consider
+                the following line of text:</p>
+            <code class="code-area">My cat is very grumpy</code>
+            <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a
+                paragraph (&lt;p&gt;) element:</p>
+            <code class="code-area">&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
+            <p class=note>Note: Tags in HTML are case-insensitive. This means they can be written in uppercase or
+                lowercase. For example, a title tag could be written as title, TITLE, Title, TiTlE, etc., and
+                it will work. However, it is best practice to write all tags in lowercase for
+                consistency and readability.</p>
+            <h1>Anatomy of a HTML element</h1>
+            <img class="resp-img"
+                src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png"
+                alt="anatomy of html tag">
+        </section>
+        <section id="HTMLAttrib" class="main-section">
+            <header>
+                <h1>HTML Attributes
+                </h1>
+            </header>
+            <p>HTML attributes provide additional information about HTML elements.
+
+            </p>
+            <h3>HTML Attributes</h3>
+            <ul>
+                <li>All HTML elements can have attributes</li>
+                <li>Attributes provide additional information about elements
+                </li>
+                <li>Attributes are always specified in the start tag
+                </li>
+                <li>Attributes usually come in name/value pairs like: name="value"
+                </li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, reiciendis?</li>
+            </ul>
+            <h3>The href Attribute</h3>
+            <p>The < a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:</p>
+            <code class="code-area"> &lt;a href="https://www.w3schools.com">Visit W3Schools&lt;/a> </code>
+            <h3>The src Attribute</h3>
+            <p>The < img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the
+                    image to be displayed:</p>
+            <code class="code-area">&lt;img src="img_girl.jpg"></code>
+        </section>
+
+
+        <section id="HTMLheadings" class="main-section">
+            <header>
+                <h1>HTML Headings</h1>
+            </header>
+            <p>
+                HTML headings are titles or subtitles that you want to display on a webpage.
+            </p>
+            <h3>Example</h3>
+            <code>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+            </code>
+            <h3>HTML Headings</h3>
+            <p>HTML headings are defined with the &lt;h1> to &lt;h6> tags.
+
+                &lt;h1> defines the most important heading. &lt;h6> defines the least important heading.</p>
+            <code class="code-area">&lt;h1>Heading 1&lt;/h1>
+                <br>
+                &lt;h2>Heading 2&lt;/h2>
+                <br>
+                &lt;h3>Heading 3&lt;/h3>
+                <br>
+                &lt;h4>Heading 4&lt;/h4>
+                <br>
+                &lt;h5>Heading 5&lt;/h5>
+                <br> &lt;h6>Heading 6&lt;/h6></code>
+        </section>
+
+
+        <section id="HTMLParagraphs" class="main-section">
+            <header>
+                <h1>HTML Paragraphs</h1>
+            </header>
+            <p>A paragraph always starts on a new line, and is usually a block of text.
+            </p>
+            <h3>HTML Paragraphs</h3>
+            <p>The HTML &lt;p> element defines a paragraph.
+
+                A paragraph always starts on a new line, and browsers automatically add some white space (a margin)
+                before and after a paragraph.</p>
+            <code class="code-area">
+                &lt;p>This is a paragraph.&lt;/p>
+                <br>
+                &lt;p>This is another paragraph.&lt;/p>
+            </code>
+        </section>
+        <br>
+        <hr>
+        <p>All of this is taken from either MDN docs or w3 schools</p>
+    </main>
+</body>
+
+</html>
